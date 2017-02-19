@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		484075DA1E58870200569314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075D91E58870200569314 /* AppDelegate.swift */; };
-		484075DC1E58870200569314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075DB1E58870200569314 /* ViewController.swift */; };
+		484075DC1E58870200569314 /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075DB1E58870200569314 /* RecordSoundViewController.swift */; };
 		484075DF1E58870200569314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484075DD1E58870200569314 /* Main.storyboard */; };
 		484075E11E58870200569314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484075E01E58870200569314 /* Assets.xcassets */; };
 		484075E41E58870200569314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484075E21E58870200569314 /* LaunchScreen.storyboard */; };
 		484075EF1E58870200569314 /* pitchperfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075EE1E58870200569314 /* pitchperfectTests.swift */; };
 		484075FA1E58870200569314 /* pitchperfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075F91E58870200569314 /* pitchperfectUITests.swift */; };
+		484076081E58A4D600569314 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484076071E58A4D600569314 /* PlaySoundViewController.swift */; };
+		4840760A1E597A6500569314 /* PlaySoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		484075D61E58870200569314 /* pitchperfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pitchperfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484075D91E58870200569314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		484075DB1E58870200569314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		484075DB1E58870200569314 /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		484075DE1E58870200569314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		484075E01E58870200569314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484075E31E58870200569314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		484075F51E58870200569314 /* pitchperfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pitchperfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484075F91E58870200569314 /* pitchperfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pitchperfectUITests.swift; sourceTree = "<group>"; };
 		484075FB1E58870200569314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484076071E58A4D600569314 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				484075D91E58870200569314 /* AppDelegate.swift */,
-				484075DB1E58870200569314 /* ViewController.swift */,
+				484075DB1E58870200569314 /* RecordSoundViewController.swift */,
 				484075DD1E58870200569314 /* Main.storyboard */,
 				484075E01E58870200569314 /* Assets.xcassets */,
 				484075E21E58870200569314 /* LaunchScreen.storyboard */,
 				484075E51E58870200569314 /* Info.plist */,
+				484076071E58A4D600569314 /* PlaySoundViewController.swift */,
+				484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */,
 			);
 			path = pitchperfect;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484075DC1E58870200569314 /* ViewController.swift in Sources */,
+				484075DC1E58870200569314 /* RecordSoundViewController.swift in Sources */,
+				4840760A1E597A6500569314 /* PlaySoundViewController+Audio.swift in Sources */,
+				484076081E58A4D600569314 /* PlaySoundViewController.swift in Sources */,
 				484075DA1E58870200569314 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 				484076001E58870200569314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		484076011E58870200569314 /* Build configuration list for PBXNativeTarget "pitchperfectTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				484076031E58870200569314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		484076041E58870200569314 /* Build configuration list for PBXNativeTarget "pitchperfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				484076061E58870200569314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
