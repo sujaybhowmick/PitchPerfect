@@ -15,10 +15,12 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     
     var audioRecorder: AVAudioRecorder!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        recordButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        stopButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +50,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func recordButtonPressed(_ sender: Any) {
-        print("record button pressed, start recording")
         recordButton.isEnabled = false
         stopButton.isEnabled = true
         
@@ -58,7 +59,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         let filePath = URL(string: pathArray.joined(separator: "/"))
         
         let session = AVAudioSession.sharedInstance()
-        try! session.setCategory(AVAudioSessionCategoryRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
+        try! session.setCategory(AVAudioSessionCategoryRecord)
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
@@ -68,7 +69,6 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopButtonPressed(_ sender: Any) {
-        print("stop button pressed")
         recordButton.isEnabled = true
         stopButton.isEnabled = false
         audioRecorder.stop()
