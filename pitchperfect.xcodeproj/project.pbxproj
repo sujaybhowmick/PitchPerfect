@@ -16,6 +16,7 @@
 		484075FA1E58870200569314 /* pitchperfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484075F91E58870200569314 /* pitchperfectUITests.swift */; };
 		484076081E58A4D600569314 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484076071E58A4D600569314 /* PlaySoundViewController.swift */; };
 		4840760A1E597A6500569314 /* PlaySoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */; };
+		4840760C1E5D2CA600569314 /* RecordSoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840760B1E5D2CA600569314 /* RecordSoundViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		484075FB1E58870200569314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484076071E58A4D600569314 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 		484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundViewController+Audio.swift"; sourceTree = "<group>"; };
+		4840760B1E5D2CA600569314 /* RecordSoundViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordSoundViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				484075E51E58870200569314 /* Info.plist */,
 				484076071E58A4D600569314 /* PlaySoundViewController.swift */,
 				484076091E597A6500569314 /* PlaySoundViewController+Audio.swift */,
+				4840760B1E5D2CA600569314 /* RecordSoundViewController+Audio.swift */,
 			);
 			path = pitchperfect;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				484075DC1E58870200569314 /* RecordSoundViewController.swift in Sources */,
 				4840760A1E597A6500569314 /* PlaySoundViewController+Audio.swift in Sources */,
 				484076081E58A4D600569314 /* PlaySoundViewController.swift in Sources */,
+				4840760C1E5D2CA600569314 /* RecordSoundViewController+Audio.swift in Sources */,
 				484075DA1E58870200569314 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
